@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Zay Shop eCommerce HTML CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- Load fonts style after rendering the layout styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+<!--
+    
+TemplateMo 559 Zay Shop
+
+https://templatemo.com/tm-559-zay-shop
+
+-->
+</head>
+
+<body>
+    <!-- Start Top Nav -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
+        <div class="container text-light">
+            <div class="w-100 d-flex justify-content-between">
+                <div>
+                    <i class="fa fa-phone mx-2"></i>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:(11)2090-1730">(11) 2090-1730</a>
+                </div>
+                <div>
+                    <a class="text-light" href="https://www.facebook.com/novachevrolet/" target="_blank" rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://instagram.com/chevroletnovabr" target="_blank"><i class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
+                                      
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Close Top Nav -->
+
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <a class="navbar-brand text-success logo h1 align-self-center" href="index.html">
+                <img src="data:image/jpeg;base64,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" class="img-fluid" width="50%" alt="logo">
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
+                <div class="flex-fill">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://loja.chevroletnova.com.br/">Loja Online</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.chevroletnova.com.br/">Veículos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.novapecachevrolet.com.br/cupom.html">Cupom</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar align-self-center d-flex">
+                    <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
+                            <div class="input-group-text">
+                                <i class="fa fa-fw fa-search"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <!-- Close Header -->
+
+    <!-- Modal -->
+    <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="w-100 pt-1 mb-5 text-right">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="" method="get" class="modal-content modal-body border-0 p-0">
+                <div class="input-group mb-2">
+                    <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Search ...">
+                    <button type="submit" class="input-group-text bg-success text-light">
+                        <i class="fa fa-fw fa-search text-white"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <!-- Start Banner Hero -->
+    <!---
+    <div id="template-mo-zay-hero-carousel" class="carousel slide" data-bs-ride="carousel" id="car">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="1"></li>
+            <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="2"></li>
+        </ol>
+        
+    <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="container">
+                    <div class="row p-5">
+                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                            <img class="img-fluid" src="./assets/img/30-ANOS-MENOR.png " alt="#">
+                        </div>
+                        <div class="col-lg-6 mb-0 d-flex align-items-center">
+                            <div class="text-align-left align-self-center">
+                                <h2 class="h2 text-success"><b>Nova Chevrolet</b> 30 anos</h2>
+                                <h3 class="h2">Desde 1993 sendo excelência em vendas </h3>
+                                <p>
+                                    O Grupo Nova, que desde 1993, representa a marca Chevrolet conta com Unidades certificadas com “Nível A” pela General Motors nas cidades de São Paulo, Ribeirão Preto, Campinas e São José do Rio Preto <a rel="sponsored" class="text-success" href="https://templatemo.com" target="_blank"> Saiba mais</a>
+                                   
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row p-5">
+                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                            <img class="img-fluid" src="./assets/img/banner_img_02.jpg" alt="">
+                        </div>
+                        <div class="col-lg-6 mb-0 d-flex align-items-center">
+                            <div class="text-align-left">
+                                <h1 class="h1">Manutenção Preventiva</h1>
+                                <h3 class="h2">Saíba como evitar imprevistos</h3>
+                                <p>
+                                    Conselhos sobre a importância da manutenção, e orientações sobre verificações regulares, troca de óleo, inspeção de freios, pneus e outros componentes.
+                                    <a rel="sponsored" class="text-success" href="https://templatemo.com" target="_blank"> Saiba mais</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row p-5">
+                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                            <img class="img-fluid" src="./assets/img/banner_img_03.jpg" alt="">
+                        </div>
+                        <div class="col-lg-6 mb-0 d-flex align-items-center">
+                            <div class="text-align-left">
+                                <h1 class="h1">Dicas de Compra</h1>
+                                <h3 class="h2">Manual prático do Cliente </h3>
+                                <p>
+                                    Saiba como realizar a verificação de histórico do veículo, avaliação do estado mecânico, troca de seu usado e outros conselhos práticos para uma compra inteligente
+                                    <a rel="sponsored" class="text-primary" href="https://templatemo.com" target="_blank"> Saiba mais</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev text-decoration-none w-auto ps-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="prev">
+            <i class="fas fa-chevron-left"></i>
+        </a>
+        <a class="carousel-control-next text-decoration-none w-auto pe-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="next">
+            <i class="fas fa-chevron-right"></i>
+        </a>
+    </div>-->
+    
+    <!-- End Banner Hero -->
+    <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+        <div class="container text-left text-md-left" data-aos="fade-up">
+          <h1>Nova Chevrolet <span>30 Anos</span></h1>
+          <h2>Desde 1993, representando a marca Chevrolet com certificados com “Nível A” pela General Motors</h2>
+          <a href="#about" class="btn-get-started scrollto">CONHEÇA</a>
+        </div>
+      </section><!-- End Hero -->
+
+
+    <!-- Start Categories of The Month -->
+    
+    <!-- End Categories of The Month -->
+
+
+    <!-- Start Featured Product -->
+    <section class="bg-light">
+        <div class="container py-5">
+            <div class="row text-center py-3">
+                <div class="col-lg-6 m-auto">
+                    <h1 class="h1">Topicos</h1>
+                    <p>
+                        A Nova te ajuda a tomar as melhores decisões na aquisição e manutenção do seu veículo
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="shop-single.html">
+                            <img src="./assets/img/PREVENTIVA.png" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                                                     <a href="shop-single.html" class="h2 text-decoration-none text-dark">Manutenção Preventiva</a>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt in culpa qui officia deserunt.
+                            </p>
+                            <p class="text-left"><a class="btn btn-primary">Aproveite</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="shop-single.html">
+                            <img src="./assets/img/usado.png" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                           <!-- <ul class="list-unstyled d-flex justify-content-between">
+                                <li>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                </li>
+                                <li class="text-muted text-right">$480.00</li>
+                            </ul>-->
+                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">Compre com Segurança</a>
+                            <p class="card-text">
+                                Aenean gravida dignissim finibus. Nullam ipsum diam, posuere vitae pharetra sed, commodo ullamcorper.
+                            </p>
+                            <p class="text-left"><a class="btn btn-primary">Aproveite</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="shop-single.html">
+                            <img src="./assets/img/blog.png" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                           <!---- <ul class="list-unstyled d-flex justify-content-between">
+                                <li>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                </li>
+                                <li class="text-muted text-right">$360.00</li>
+                            </ul>-->
+                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">Blog</a>
+                            <p class="card-text">
+                                Saiba todo novidade que acontece no mundo GM
+                            </p>
+                            <p class="text-left"><a class="btn btn-primary">Aproveite</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container py-5">
+        <div class="row text-center pt-3">
+            <div class="col-lg-6 m-auto">
+                <h1 class="h1">Conheça nossa Loja de Peças Online</h1>
+                <p>
+                    Somos o maior estoque de Peças Genuínas GM e ACDelco do Brasil, aproveite a promoções imperdiveis, e conheça nosso site de Peças Automotivas.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-4 p-5 mt-3 ">
+                <a href="#"><img src="./assets/img/genuina.png" class="rounded-circle img-fluid border"></a>
+                <h5 class="text-center mt-3 mb-3">Peças Genuínas GM</h5>
+                <p class="text-center"><a class="btn btn-primary">Acesse</a></p>
+            </div>
+            <div class="col-12 col-md-4 p-5 mt-3">
+                <a href="#"><img src="./assets/img/acdelco.png" class="rounded-circle img-fluid border"></a>
+                <h2 class="h5 text-center mt-3 mb-3">ACDelco</h2>
+                <p class="text-center"><a class="btn btn-primary">Acesse</a></p>
+            </div>
+            <div class="col-12 col-md-4 p-5 mt-3">
+                <a href="#"><img src="./assets/img/ACESSORIO.png" class="rounded-circle img-fluid border"></a>
+                <h2 class="h5 text-center mt-3 mb-3">Acessórios Chevrolet</h2>
+                <p class="text-center"><a class="btn btn-primary">Acesse</a></p>
+            </div>
+        </div>
+    </section>
+    <!-- End Featured Product -->
+
+
+    <!-- Start Footer -->
+    <footer class="bg-dark" id="tempaltemo_footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3 pt-5">
+                                    <img src="assets/img/logo Nova Azul.png" class="img-fluid" width="50%" alt="logo">
+
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li>
+                            <i class="fas fa-map-marker-alt fa-fw"></i>
+                            <a href="https://www.chevroletnova.com.br/nossas-lojas" id="postal">Endereços</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-phone fa-fw"></i>
+                            <a class="text-decoration-none" href="tel:(11)2090-1730">(11) 2090-1730</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope fa-fw"></i>
+                            <a class="text-decoration-none" href="mailto:info@company.com">cac.lojavirtual@chevroletnova.com.br</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Serviços</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="#">Revisão</a></li>
+                        <li><a class="text-decoration-none" href="#">Mecânica</a></li>
+                        <li><a class="text-decoration-none" href="#">Kit Gás Natural Veicular</a></li>
+                        <li><a class="text-decoration-none" href="#">Funilaria</a></li>
+                        <li><a class="text-decoration-none" href="#">Ofertas</a></li>
+                        <li><a class="text-decoration-none" href="#">Agendamentos</a></li>
+                        <li><a class="text-decoration-none" href="#">Seguro Auto</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Vendas</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="#">Carros Novos</a></li>
+                        <li><a class="text-decoration-none" href="#">Carros Seminovos</a></li>
+                        <li><a class="text-decoration-none" href="#">Vendas Diretas</a></li>
+                        <li><a class="text-decoration-none" href="#">Loja de Peças Online</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="col-md-3 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Institucional</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="#">Sistema de Informações de Crédito (SCR)</a></li>
+                        <li><a class="text-decoration-none" href="#">Sobre a Nova Chevrolet</a></li>
+                        <li><a class="text-decoration-none" href="#">Contato</a></li>
+                        <li><a class="text-decoration-none" href="#">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="row text-light mb-3">
+                <div class="col-12 mb-3">
+                    <div class="w-100 my-3 border-top border-light"></div>
+                </div>
+               
+                <div class="col-auto">
+                    <label class="sr-only" for="subscribeEmail">Email address</label>
+                    <div class="input-group mb-2">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-100 bg-black py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-12">
+                        <p class="text-left text-light">
+                            Copyright &copy; 2023 Nova Chevrolet
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Start Script -->
+    <script>
+        let currentIndex = 0;
+        const banners = document.querySelectorAll('.banner');
+        const totalBanners = banners.length;
+
+        function changeBanner() {
+            banners[currentIndex].style.display = 'none';
+
+            currentIndex++;
+
+            if (currentIndex >= totalBanners) {
+                currentIndex = 0;
+            }
+
+            banners[currentIndex].style.display = 'block';
+        }
+
+        setInterval(changeBanner, 3000); // Altera o banner a cada 3 segundos
+    </script>
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/templatemo.js"></script>
+    <script src="assets/js/custom.js"></script>
+    
+    <!-- End Script -->
+</body>
+
+</html>
